@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Code Review with Gerrit</title>
+</head>
+<body>
+    <h1>Gerrit tuto</h1>
+    Code Review with Gerrit <div class="code-review">
+        <h2>Change Details</h2>
+        <p>Change ID: <span id="change-id">Change1234</span></p>
+        <p>Author: <span id="author">John Doe</span></p>
+        <p>Commit Message: <span id="commit-message">Fix a bug</span></p>
+
+        <h2>Code Changes</h2>
+
+        <h2>Comments</h2>
+        <div class="comment">
+            <p><strong>Reviewer:</strong> Jane Smith</p>
+            <p><strong>Comment:</strong> This looks good overall, but please check line 15 for potential improvements.</p>
+        </div>
+
+        <!-- Add more comments as needed -->
+
+        <h2>Review Actions</h2>
+        <button onclick="approveChange()">Approve</button>
+        <button onclick="rejectChange()">Reject</button>
+        <button onclick="commentOnChange()">Add Comment</button>
+    </div>
+
+    <script>
+        function approveChange() {
+            // Implement approval logic
+            alert('Change approved!');
+        }
+
+        function rejectChange() {
+            // Implement rejection logic
+            alert('Change rejected!');
+        }
+
+        function commentOnChange() {
+            // Implement comment logic
+            alert('Comment added!');
+        }
+    </script>
+</body>
+</html>
